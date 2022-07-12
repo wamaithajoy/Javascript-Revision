@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <script>
+
+  // Array in Js
+  // A single variable that stores multiple elements, a collection of data
+  // Declaring arrays
+  // Method 1
+  // Initializing your array
+  // Method 2
+  // Declaring your array with the number of elements to be stored in the array
+
+  var fruits=["Apple","Mango","Grapes"]
+  console.log(fruits)
+
+  var cars=new Array(3)
+  cars[0]="Volvo"
+  cars[1]="Mazda"
+  cars[2]="Toyota"
+  console.log(cars)
+
+  // Objects in Js
+  // A collection of property, a property is denoted by a key and a value
+
+  var mycar={Name:"Volvo",Regno:"234KBV",Color:"Black"}
+  console.log(mycar)
+
+  // Destructuring in Js
+  // Destructuring is the act of unpacking elements in an array or object
+  // You can also switch and manipulate unpacked elements depending on the type of operation
+
+  // Destructing in arrays
+  // We store the variable name in [] which will be assigned to the name of the array
+  // Assigning variables using Destructuring
+  
+  var myfruits=["Mango","Apple","Grapes"]
+  var [firstfruit,secondfruit]=myfruits
+  console.log(firstfruit)
+
+  // Swapping variables with destructuring
+
+  var myfruits=["Mango","Apple","Grapes"]
+  var [firstfruit,secondfruit]=myfruits
+  [firstfruit,secondfruit]=[secondfruit,firstfruit]
+  console.log(firstfruit,secondfruit)
+
+  // Mutating arrays with destructuring
+  // Mutating means changing the values of an element
+  // A valiue is said to be mutable if it can be changed
+
+  var myfruits=["Mango","Apple","Grapes"]
+  [myfruits[0],myfruits[1]]=[myfruits[1],myfruits[0]]
+  console.log(myfruits)
+
+  // Destructuring in objects
+  // When destructuring objects we use {} with the exact same name of the object
+
+  const languages={frontend:"React Js",backend:"Node"}
+  const{frontend,backend}=languages
+  console.log(frontend,backend)
+  
+  // Assigning a variable name to the object we want to unpack
+  const courses={frontend:"React Js",backend:"Node"}
+  const{frontend:Course1,backend:Course2}=courses
+  console.log(Course1,Course2)
+
+  // Skipping unwanted element in an array without assigning them to a variable
+  // Using the comma operator
+
+  var numbers=[10,20,30,40]
+  var[x,y,,z]=numbers
+  console.log(x,y,z)
+
+  // Assigning remaining elements to a single variable 
+  // Using the spread operator
+
+  var numbers=[10,20,30,40]
+  var[x,...z]=numbers
+  console.log(x,z)
+
+  // For each in Javascript
+  // Used to iterate every element in an array
+
+  var records=["Student","Age","Adm no","Marks"]
+  records.forEach(statement)
+  function statement(record){
+  console.log(record) 
+  }
+
+  var studentMarks=[70,56,45,90]
+  sum=0
+  studentMarks.forEach(averageMarks)
+  function averageMarks(marks){
+    sum+=marks
+    average=sum/studentMarks.length
+    console.log(average)
+  }
+
+  // Arrow Function
+  // Allows you to create functions in a more cleaner way compared to regular functions
+  // Steps in Array Function:
+  // Declare a variable
+  // Create a function and pass in arguments
+  // Create the arrow function
+  // Expression
+
+  var greet=()=> console.log("Hello world")
+  greet()
+
+  var add=(a,b)=> a+b
+  console.log(add(2,4))
+
+  let names=name=> console.log("Hello "+name)
+  names("Joy")
+ 
+  // Filtering in Javascript
+  // Checking for certain conditions and executing those conditions
+
+  var oddnumbers=[10,5,3,7,16,12,49,78]
+  var odd=oddnumbers.filter(function(a){
+    if (a%2!=0){
+      console.log(a)
+    }
+  })
+
+  </script>  
+</body>
+</html>

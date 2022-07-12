@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+//         // Largest number between numbers
+//         var a=10
+//         var b=5
+//         if(a>b){
+//             document.write(a, " Is the largest")    
+//         }
+//         else{
+//             document.write(b," Is the largest")
+//         }
+
+//         // Product of three numbers
+//         var a=10
+//         var b=5
+//         var c=7
+//         var product=a*b*c
+//         alert(product)
+
+//         // Largest number in an array
+        
+//         function largestnumber(){
+//             var integers=[-5,-2,-6,0,-1]
+//             largest=0
+//             for(var i=0; i<integers.length;i++){
+//                 if (integers[i]>largest){
+//                     largest=integers[i]
+//                 }
+//             }
+//             console.log(largest)
+
+//         }
+//         largestnumber()
+
+
+//         // Check whether a number is odd or even
+//         for(var i=0;i<=15;i++){
+//             if (i%2!=0){
+//                 console.log(i,"is odd")
+//             }
+//             else{
+//                 console.log(i,"is even")
+//             }
+//         }
+
+
+//         // Get the average of marks in a list and get the grade
+//         var marks=[80,77,88,95,68]
+//         sum=0
+//         for(var i=0;i<marks.length;i++){
+//             sum+=marks[i]
+//              console.log(sum)
+//             var average=sum/marks.length
+//             console.log(average)
+//             if(average<60){
+//                 console.log("Grade F")
+//             }
+//             else if(average<70){
+//                 console.log("Grade D")
+//             }
+//             else if(average<80){
+//                 console.log("Grade C")
+//             }
+//             else if(average<90){
+//                 console.log("Grade B")
+//             }
+//             else if(average<100){
+//                 console.log("Grade A")
+//             }
+//             else{
+//                 console.log("You did not sit for any exam")
+//             }
+//         }
+//         // Area of a triangle
+//         var a=5
+//         var b=6
+//         var c=7
+//         var area=a*b*c
+//         console.log(area)
+        
+//         // Reverse a number
+      
+//         function reversenumber(n){
+//             n=n+"";
+//             return n.split("").reverse().join("");
+//         }
+//         console.log(Number(reversenumber(1234)))
+        
+//         // Check palindrome
+//         function palindromeChecker(name){
+//             var namearray=name.split("")
+//             var reversearray=namearray.reverse()
+//             var stringarray=reversearray.join("")
+//             if(name==stringarray){
+//                 console.log("It is a palindrome")
+//             }
+//             else{
+//                 console.log("Not a palindrome")
+//             }
+//         }
+//         palindromeChecker("racecar")
+
+//        // Sorting a string/sentence/word in  alphabetic order
+//        function alphabeticorder(word){
+//     return word.split("").sort().join("");
+//        }
+//        console.log(alphabeticorder("car"))
+
+//     //    Sum up digits in a number
+//     var num=1234
+//     num=num+" "
+//     sum=0
+//     for(var i=0;i<num.length;i++){
+//     sum+=i
+//     }
+//     console.log(Number(sum))
+
+//     // Do while
+//     var n=1
+//     do{
+//      if (n%2==0){
+//      console.log(n)
+//      }  
+//      n++ 
+//     }
+// while(n<100)
+
+//     // Ternary Operator
+//     var n=10
+//    var n=(n%2==0)?'Even':'Odd'
+//     console.log(n)
+
+//     // Capitalizing the first letter in a string/sentence
+//       var words="kenya"
+//       var wordcapitalize=words.charAt(0).toUpperCase + words.slice(1);
+//       alert(wordcapitalize);
+      
+//     // Accessing each elements in an array using their indexes
+//     var fruits=["Apple","Watermellon","Strawberry"] 
+//     console.log(fruits[0])
+//     console.log(fruits[1])
+    
+//     // Accessing all the elements in an array
+//     var mixedarray=[100,true,"Wamaitha",{}]
+//     for(var i=0;i<mixedarray.length;i++){
+//     console.log(i,mixedarray[i])
+//     }
+
+//     // 2 D array
+
+//     // function twodimensionalarray(num1,num2){
+//     //     newarray=[]
+//     //     for(var i=o;i<newarray.length;i++)
+//     // }
+
+//     let numbers=[1,2,3,4,5]
+//     newnumbers=numbers
+//     console.log(newnumbers)
+   
+//     // Finding the element in the array whith character greater than 7
+//     var countries=["Kenya","Uganda","Singapore","Rwanda"]
+//     for(var i=0;i<countries.length;i++){
+//         var largest=countries[i].length
+//         if (largest>7){
+//             console.log(largest)
+//         }
+//         // if(countries[i].length>7){
+//         //     console.log(countries[i])
+//         }
+//         console.log(countries.length)
+    
+    
+//     // Deleating objects in an object
+//     var student={name:"Joy",class:"V",rollno:12}
+//     delete student.rollno
+//     console.log(student)
+    
+//     // Switch Statement
+//     var grade='C'
+//     switch(grade)
+//     {
+//         case 'A':document.write("Good Job");
+//         break;
+//         case 'B':document.write("Pretty Good");
+//         break
+//         case 'C':document.write("Passed");
+//         break
+//         case 'D':document.write("Not good");
+//         break
+//         default:document.write("Unknown Grade");
+//     }
+  
+//     // While and do while loop
+//     var a=1
+//     while (a<10){
+//         if (a%2==0){
+//             document.write(a)
+//         }
+//     }
+
+//     var count=0
+//     do{
+//         if(count%2==0){
+//             console.log(count)
+//             count++
+//         }
+//     }while(count<20);
+
+
+    // Break statement
+    var x=1
+    while(x<20){
+        if(x==5){
+            break;
+        }
+        x+=1
+        document.write(x)
+    }
+
+    // Continue Statement
+    var x=1
+    while(x<20){
+        if(x==5){
+            continue;
+        }
+        x+=1
+        document.write(x)
+    }
+
+    // ["exuberant", destruction", "relocation" , "exaggerated"]
+
+    // var string1="Exuberant"
+    // var string2="Destruction"
+    // var string3="Relocation"
+    // var string4="Exaggerated"
+
+    var myarray=[]
+    myarray.push("Exuberant")
+    myarray.push("Destruction")
+    myarray.push("Relocation")
+    myarray.push("Exaggerated")
+    console.log(myarray)
+    </script>
+</body>
+</html>
+
+

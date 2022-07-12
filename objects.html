@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Creating Objects
+        // By object literal
+        // Declaring property and value
+        // object={property:value,property:value,property:value}
+
+        const myobjects={id:102,name:"Joy",Salary:40000}
+        console.log(myobjects)
+
+        //By Creating instance of objects
+        // Using the new keyword
+
+        var empt=new Object()
+        empt.id=1234
+        empt.name="Wamaitha"
+        empt.school="AkiraChix"
+        console.log(empt)
+
+        // By using an object constructor
+        // Create a function with arguments, each value can be assigned using the "this" keyword
+        // "this" keyword refers to the current object
+
+        function records(id,name,school){
+            this.id=id
+            this.name=name
+            this.school=school
+
+        }
+        my=new records(1234,"Leticia","Akirachix")
+        console.log(my.id,my.name,my.school)
+
+        // Uses of "this" Keyword
+        // Used to instanciate properties of an object
+        // Used to access elements in an object inside a method
+
+        // Deleting elements in an object
+        // Using the delete method
+
+        const myobjectss={id:102,name:"Joy",Salary:40000}
+        delete myobjectss.id
+        console.log(myobjectss)
+
+        // Accessing elements in an object
+        // Using the dot notation
+        // Using array-like notation
+ 
+        const employee={id:102,name:"Joy",Salary:40000} 
+        console.log(employee.name)
+
+        const newEmployees={id:102,name:"Joy",Salary:40000} 
+        console.log(newEmployees["Salary"],["name"],["id"])
+
+        // Nested Objects
+        // Accesing elements in a nested array
+
+        var studerecords={name:"Leti",YOB:2002,Marks:{science:70,CRE:45}}
+        console.log(studerecords.Marks.science)
+        console.log(studerecords["Marks"].CRE)
+        console.log(studerecords["Marks"]["CRE"])
+
+        // Accesing keys and values in an object
+
+        const person={
+            name:"Ken",
+            age:30,
+            city:'Nairobi'
+        }
+        var details=Object.values(person)
+        console.log(details)
+        var keyys=Object.keys(person)
+        console.log(keyys)
+
+        // Modifying the value of a property using the assignment operator (=)
+        // Adding elements in a object
+        
+        var child={name:"Leticia",Age:2,Weight:20}
+        child.name="Gitu"
+        console.log(child)
+        child.favoriteColor="Blue"
+        console.log(child)
+
+        // Checking if a propery exits in an object
+        // Use the in operator
+
+        var child={name:"Leticia",Age:2,Weight:20}
+        console.log("School" in child)
+
+        const people={
+            firstname:"John",
+            lastname:"Doe",
+            id:1234,
+            fullname:function(){
+                return this.firstname + " " + this.lastname;
+                // fullname()
+            }
+
+        };
+
+
+    </script>
+</body>
+</html>
